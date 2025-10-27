@@ -1,8 +1,13 @@
-.contenedor{
-    display: flex;
-    flex-direction: column;
+#columnas{
+    background-color: orange;
 }
 
+.contenedor{
+  margin: 0 auto;
+  max-width: 1500px;
+  background-color: white;
+   
+}
 
 
 header{
@@ -30,13 +35,20 @@ font-size: 40px;
 display: flex;
 flex-direction: row;
 justify-content: center;
+background-color: red;
+
+@media screen and (min-width:480px){
+    background-color: blue;
+    
+}
   
- @media screen and (min-width:568px){
-     font-size: 20px;
+@media screen and (min-width:780px){
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-left: 1rem;
+    background-color: aqua;
 }
    
 }
@@ -45,10 +57,8 @@ nav{
     background-color: rgb(52, 52, 231);
     color: white;
      
-    }
-   
+
 @media screen and (min-width:568px){
-nav{
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -67,16 +77,15 @@ nav ul{
     justify-content: center;
      list-style: none;
     
-}
 
 @media screen and (min-width:568px){
-    nav ul{
    flex-direction: row;
         list-style: none;
-        font-size: 12px;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
 
 
     }
@@ -100,11 +109,9 @@ main{
     padding-top: 1rem;
     gap: 20px;
     color: white;
-}
 
 
 @media screen and (min-width:568px){
-  main{
     display: flex;
     flex-direction: row;
     padding-top: 1rem;
@@ -118,10 +125,8 @@ main div{
     align-items: flex-start;
     justify-content: center;
     flex-basis: 60%;
-}
 
 @media screen and (min-width:568px){
-    main div{
         flex-basis: 70%;
     }
 }
@@ -132,9 +137,7 @@ main div{
     flex-direction: row;
     justify-content: center;
     padding: 1rem;
-}
 @media screen and (min-width:568px){
-  .servicio{
     align-items: flex-start;
     padding: 1rem;
 }
@@ -163,10 +166,8 @@ aside{
     flex-direction: column;
     align-items: center;
     background-color: rgb(52, 52, 231);
-}
 
 @media screen and (min-width:568px){
-aside{
     flex-grow: 1;
     background-color: blue;
     display: flex;
@@ -187,12 +188,9 @@ footer{
     justify-content: center;
     padding: 2rem;
     background-color: purple;
-}
+    color: white;
 
 @media screen and (min-width:568px){
-footer{
-    background-color: purple;
-    color: white;
     padding-top: 2rem;
 }
 }
